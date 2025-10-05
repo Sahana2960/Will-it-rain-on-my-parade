@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7-Day Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>7-Day Weather Forecast</h1>
+    <p id="cityName"></p>
+
+    <div id="forecast" class="forecast-cards"></div>
+    <div id="recommendations" class="recommendations"></div>
+
+    <div class="chart-container">
+      <h2>7-Day Rainfall Trend</h2>
+      <canvas id="rainChart"></canvas>
+    </div>
+
+    <div class="download-buttons">
+      <button id="downloadCSV">Download CSV</button>
+      <button id="downloadJSON">Download JSON</button>
+      <a href="index.html"><button>⬅ Back to City Selection</button></a>
+    </div>
+  </div>
+
+  
+  <div id="chatbotWidget" class="chatbot-widget minimized">
+    <div class="chatbot-header">🌤️ Weather Assistant</div>
+    <div id="chatbotWindow" class="chat-window"></div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Ask something..." />
+      <button id="chatSend">Send</button>
+    </div>
+    <button id="chatToggle" class="chat-toggle">💬</button>
+  </div>
+
+  <script src="forecast.js"></script>
+</body>
+</html>
