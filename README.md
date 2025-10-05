@@ -31,9 +31,8 @@ Features
 
 ⬇️ Download forecasts in CSV or JSON format
 
-📱 Fully responsive and mobile-friendly
 
-Technologies Used
+Technologies Used: 
 
 HTML, CSS, JavaScript
 
